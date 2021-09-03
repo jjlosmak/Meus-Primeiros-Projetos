@@ -91,7 +91,15 @@ const calcula = () => {
             case '+': resultado = valorAnterior + valorAtual(); break;
             case '-': resultado = valorAnterior - valorAtual(); break;
             case '*': resultado = valorAnterior * valorAtual(); break;
-            case '/': resultado = valorAnterior / valorAtual(); break;
+            case '/': resultado = valorAnterior / valorAtual(); 
+                if (valorAnterior == 0) {
+                atualizaVisor();
+                return;
+                } 
+            else if (valorAtual() == 0) {
+                atualizaVisor();
+                return;   
+            }   break; 
         }
         sValor = resultado.toString().replace('.', ',');
     }
