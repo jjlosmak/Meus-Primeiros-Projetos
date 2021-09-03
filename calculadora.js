@@ -92,7 +92,7 @@ const calcula = () => {
             case '-': resultado = valorAnterior - valorAtual(); break;
             case '*': resultado = valorAnterior * valorAtual(); break;
             case '/': resultado = valorAnterior / valorAtual(); 
-                if (valorAnterior == 0) {
+            if (valorAnterior == 0) {
                 atualizaVisor();
                 return;
                 } 
