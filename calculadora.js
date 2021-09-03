@@ -93,11 +93,11 @@ const calcula = () => {
             case '*': resultado = valorAnterior * valorAtual(); break;
             case '/': resultado = valorAnterior / valorAtual(); 
             if (valorAnterior == 0) {
-                document.querySelector('#display').innerText = 'Divisão Invalido!';
+                document.querySelector('#display').innerText = 'Divisão Invalida!';
                 return;
                 } 
             else if (valorAtual() == 0) {
-                document.querySelector('#display').innerText = 'Divisão Invalido!';
+                document.querySelector('#display').innerText = 'Divisão Invalida!';
                 return;   
             }   break; 
         }
